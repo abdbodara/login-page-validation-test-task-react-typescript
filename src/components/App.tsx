@@ -76,8 +76,8 @@ function App() {
                   value={values.password}
                 />
                 {values.showPassword === "text" ?
-                  <Visibility onClick={() => onClickShowHide(values.showPassword, handleChange)} /> :
-                  <VisibilityOff onClick={() => onClickShowHide(values.showPassword, handleChange)} />}
+                  <VisibilityOff onClick={() => onClickShowHide(values.showPassword, handleChange)} /> :
+                  <Visibility onClick={() => onClickShowHide(values.showPassword, handleChange)} />}
                 <ErrorMessage hidden={!(errors.password && touched.password)}>{errors.password}</ErrorMessage>
               </Field>
               <LoginButton>
